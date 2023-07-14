@@ -1,0 +1,375 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header{
+    width: 100%;
+    height: 100vh;
+    background-image: url("../images/banner-bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+}
+
+
+nav{
+    width: 80%;
+    margin: 0 auto;
+    height: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    /*position: fixed;*/
+    /*z-index: 9999999999999;*/
+}
+.nav-logo{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav-logo img{
+    width: 90px;
+    height: 90px;
+    position: relative;
+    top: 6px;
+}
+.nav-logo::after {
+    content: "Creed";
+    font-size: 40px;
+    color: white;
+    position: relative;
+    left: 10px;
+    letter-spacing: 1px;
+}
+.nav-links{
+    width: 80%;
+    height: 90px;
+}
+.nav-links ul{
+    width: 100%;
+    height: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+.nav-links ul a{
+    text-decoration: none;
+    color: #ffff;
+    font-size: 20px;
+    padding: 10px;
+
+}
+
+.selected a{
+    background-color: rgba(255,255,255,0.2);
+    border-radius: 33px;
+    transition: 0.6s;
+
+}
+
+.unselected a:hover{
+    transition: 0.6s;
+
+    background-color: rgba(255,255,255,0.2);
+    border-radius: 33px;
+}
+
+.signup a{
+    background-color: rgb(238,98,107);
+    border-radius: 33px;
+    letter-spacing: 1px;
+    transition: 0.6s;
+}
+.signup a:hover{
+    transition: 0.6s;
+    background-color: rgba(238,98,107,0.8);
+}
+.intro{
+    width: 80%;
+    margin: 0 auto;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+}
+.info{
+    width: 70%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+.info-contant{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    gap: 20px;
+    color: white;
+}
+
+.search{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+}
+
+.search input{
+    padding: 10px;
+    width: 50%;
+}
+.search input,button{
+
+    outline: none;
+    border-radius: 33px;
+    border: none;
+}
+.search button{
+    padding: 10px;
+    width: 20%;
+    position: relative;
+    right: 150px;
+    background-color: rgb(238,98,107);
+    color: white;
+    transition: 1s;
+    cursor: pointer;
+}
+.search button:hover{
+    right: 100px;
+
+}
+
+.info h6{
+    font-size: 30px;
+}
+.info h2{
+    font-size: 50px;
+
+}
+
+/*------------------------intro----------------------------*/
+.intro-banner{
+    width: 30%;
+    height: 100%;
+    border-radius: 33px;
+    overflow: hidden;
+}
+
+.intro-banner img{
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    border-radius: 33px;
+    transition: 1s;
+}
+
+.intro-banner img:hover{
+    transition: 1s;
+    transform: scale(1.5) rotate(-5deg);
+}
+
+.actions{
+    width: 80%;
+    margin: 0 auto;
+    height: 250px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap:wrap;
+    gap: 10px;
+}
+.actions a{
+    text-decoration: none;
+    background-color: white;
+    padding:100px 120px;
+    position: relative;
+    bottom: 40px;
+    border-radius: 33px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    transition: 0.5s;
+    box-shadow: lightgray 2px 4px 10px 0;
+}
+
+.action-item{
+    padding: 10px;
+    margin: auto;
+    background-color: #0071f8;
+    border-radius: 20px;
+    transition: 1s;
+}
+
+
+.actions a h4{
+    font-size: 20px;
+}
+.actions a:hover{
+    transform: translatey(-100px);
+}
+/*--------------------trending-------------------------------------*/
+.trending{
+    width: 80%;
+    height: 100vh;
+    margin: 150px auto 0;
+}
+
+.trending-header{
+    width: 100%;
+    height: 10%;
+    display: grid;
+    grid-template-columns: 80% auto;
+    grid-template-rows:auto auto ;
+;
+}
+.trending-header h4{
+    grid-row: 1/2;
+    grid-column: 1/2;
+    color: rgb(238,98,107);
+    font-size: 20px;
+    letter-spacing: 1px;
+
+}
+.trending-header h1{
+    grid-row: 2/3;
+    grid-column: 1/2;
+    color: black;
+    font-size: 40px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.trending-header button{
+    grid-column: 2/3;
+    grid-row: 1/3;
+    width: 60%;
+    height: 50px;
+    background-color: rgb(238,98,107);
+    color: white;
+}
+.trending-header button:hover {
+    background-color: rgba(238,98,107,0.9);
+    cursor: pointer;
+}
+
+.trending{
+
+}
+
+.trending-cards{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.card{
+    width: 24%;
+    height: 350px;
+    background-color: #eee;
+    border-radius:20px;
+
+
+}
+.card-image{
+    border-radius:20px;
+
+}
+
+.card-image img{
+    width: 100%;
+    height: 70%;
+    object-fit: contain;
+    border-radius:20px;
+    transition: 1s;
+}
+.card-image img:hover{
+    transform: rotate(3deg);
+}
+.card-image span{
+    background-color: rgb(238,98,107);
+    padding: 10px;
+    position: relative;
+    bottom: 250px;
+    right: 24px;
+    color: #fff;
+    border-radius: 82px}
+
+.card-body{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: space-evenly;
+    /*grid-template-columns: 2fr 1fr;*/
+    /*grid-template-rows: 1fr 1fr;*/
+    /*grid-template-areas:    "action ."*/
+    /*                        "name shopbtn"*/
+;
+}
+
+.card-body-data{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.card-body-data h4{
+    font-size: 25px;
+
+}
+.card-body-data h6{
+  font-size: 20px;
+    color: gray;
+
+}
+
+
+.card-body a{
+    grid-area: shopbtn;
+    text-decoration: none;
+    background-color: rgb(238,98,107);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-left: 100px;
+    transition: 1s;
+}
+.card-body a:hover{
+    background-color: #0071f8;
+}
+
+/*----------------------------------footer-------------------------*/
+
+footer{
+    width: 100%;
+    height: 200px;
+    background-image: url("../images/banner-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-top-left-radius: 300px;
+    border-top-right-radius:300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer p {
+    font-size: 20px;
+    color: white;
+    letter-spacing: 1px;
+}
