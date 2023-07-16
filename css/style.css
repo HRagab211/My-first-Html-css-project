@@ -354,6 +354,71 @@ nav{
     background-color: #0071f8;
 }
 
+/*----------------------------------most played-------------------------*/
+
+.most-played{
+    width: 80%;
+    margin: auto;
+    height: 100vh;
+}
+
+.most-played-card-collection {
+    width: 100%;
+    height: 70%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.most-played-card {
+    width: 16%;
+    height: 50%;
+    border-radius: 20px;
+}
+.most-played-card-thump{
+    width: 100%;
+    height: 70%;
+    border-radius: 20px;
+}
+.most-played-card-thump img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+    transition: 1s;
+
+}
+
+.most-played-card-data{
+    width: 100%;
+    height: 30%;
+    border-radius: 20px;
+    background-color: #eee;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+}
+.most-played-card-data h5{
+    font-size: 25px;
+    letter-spacing: 1px;
+}
+.most-played-card-data a{
+   text-decoration: none;
+    color: white;
+    background-color: rgb(238,98,107);
+    /*width: 100px;*/
+    padding: 10px 30px;
+    border-radius: 20px;
+    transition: 1s;
+}
+.most-played-card-data a:hover {
+    background-color: rgba(238,98,107,0.9);
+    transform: translate(-1px);
+
+}
 /*----------------------------------footer-------------------------*/
 
 footer{
